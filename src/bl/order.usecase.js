@@ -7,8 +7,19 @@
  * @author Obed Amoasi <obedamoasi@gmail.com>
  * 
  */
+import OrderDAL from '../dal/order.dal'
 
 class OrderUsecase {
+       /**Get Order History
+     *
+     * @return {Promise<Array<Orders>} Promise of list of orders
+     *
+     */
+    getOrderHistory() {
+        console.log("getOrderHistory");
+        return OrderDAL.getOrderHistory();
+    }
+
 }
 
 export default OrderUsecase;
