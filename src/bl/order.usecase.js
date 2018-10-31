@@ -10,7 +10,7 @@
 import OrderDAL from '../dal/order.dal'
 
 class OrderUsecase {
-       /**Get Order History
+     /**Get Order History
      *
      * @return {Promise<Array<Orders>} Promise of list of orders
      *
@@ -20,6 +20,19 @@ class OrderUsecase {
         return OrderDAL.getOrderHistory();
     }
 
+    /**Calculate price of goods to be loaded
+     *
+     * @param weight {Number} - weight of package
+     * @return {Number} price of order
+     *
+     */
+    calculateCost(weight) {
+        if (weight <= 400) {
+            return .01 * 400;
+        } else {
+            return 2 + 0.005 * weight;
+        }
+    }
 }
 
 export default OrderUsecase;
