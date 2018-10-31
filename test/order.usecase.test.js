@@ -1,3 +1,6 @@
+import Order from '../src/model/order.model'
+import OrderUseCase from '../src/bl/order.usecase';
+
 let orderUsecase;
 let packages;
 beforeAll(() => {
