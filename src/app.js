@@ -19,6 +19,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(`/${process.env.API_VERSION}/static`, express.static(path.join(__dirname, '/../public')))
 
+//Configure routes
+import routes from './config/routes.config'
+routes(app);
 
 
 //Base route for checking api is online
