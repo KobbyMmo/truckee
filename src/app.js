@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 import path from 'path';
 
 import  'dotenv/config';
+import './config/db.config';
 
 const app = express();
 app.disable('x-powered-by');
