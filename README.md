@@ -1,6 +1,6 @@
-| Language | Framework | Platform | Author |
-| -------- | -------- |--------|--------|
-| Javascript | NodeJS | Heroku|Obed Amoasi |
+| Language | Framework  | Author |
+| -------- | -------- |--------|
+| Javascript | NodeJS |Obed Amoasi |
 
 
 # Truckee
@@ -14,7 +14,7 @@ current version v1.
 ### Get Order History
 * url : /v1/orders
 * method: GET
-* Response:  Reply with a response like:
+* Response:
 ```javascript
 {
   "price": 10.95,
@@ -60,7 +60,15 @@ current version v1.
 ### Create Order
 * url : /v1/orders
 * method: Post
-* Response:  Reply with a response like:
+* body: 
+```javascript
+[
+  { "id": "ID-1", "weight": 345 },
+  { "id": "OTHER-ID-2", "weight": 500 },
+  { "id": "CLIENT-ID-3", "weight": 300 },
+]
+```
+* Response: 
 ```javascript
 {
   "price": 10.95,
@@ -99,7 +107,7 @@ npm  install
 ```sh
 npm  start
 ```
-#### Run
+#### Test
 ```sh
 npm  test
 ```
