@@ -1,6 +1,6 @@
 | Language | Framework | Platform | Author |
 | -------- | -------- |--------|--------|
-| Nodejs | Express | Heroku|Obed Amoasi |
+| Javascript | NodeJS | Heroku|Obed Amoasi |
 
 
 # Truckee
@@ -105,6 +105,6 @@ npm  test
 ```
 
 ## TODO
-[ ] Mock Mongoose and objects request to test DAL and Controllers respectively
-[ ] Paginate request from Order History. accept pageSize and current page into DAL to limit and skip neccesary documents
-[ ] Update Documentation
+- [ ] Mock Mongoose and objects request to test DAL and Controllers respectively
+- [ ] Paginate request from Order History. accept pageSize and current page into DAL to limit and skip neccesary documents
+- [ ] Update Documentation
