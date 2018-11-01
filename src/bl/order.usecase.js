@@ -127,7 +127,6 @@ class OrderUsecase {
         const order = {};
         order.price = totalCost;
         order.trucks = trucks;
-        console.log(order.trucks[0]);
         return OrderDAL.saveOrder(order);
     }
 }
