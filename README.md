@@ -81,8 +81,30 @@ current version v1.
   ]
 }
 ```
+### Developement
+
+#### Setup
+To run on local machine
+```sh
+touch .env
+```
+- `MONGO_URI=mongodb://localhost:27017/database`
+- `PORT=3000`
+- `API_VERSION = v1`
+
+```sh
+npm  install
+```
+#### Run
+```sh
+npm  start
+```
+#### Run
+```sh
+npm  test
+```
 
 ## TODO
-[] Mock Mongoose and objects request to test DAL and Controllers respectively
-[] Paginate request from Order History. accept pageSize and current page into DAL to limit and skip neccesary documents
-[] Update Documentation
+[ ] Mock Mongoose and objects request to test DAL and Controllers respectively
+[ ] Paginate request from Order History. accept pageSize and current page into DAL to limit and skip neccesary documents
+[ ] Update Documentation
