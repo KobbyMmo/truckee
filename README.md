@@ -5,7 +5,7 @@
 
 # Truckee
 
-A public API to Load customer's warehouse onto trucks
+A public API to Load packages from customer's warehouse onto trucks
 
 
 ## Documentation
