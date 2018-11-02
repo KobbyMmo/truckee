@@ -117,10 +117,12 @@ npm  test
 - [ ] Paginate request from Order History. accept pageSize and current page into DAL to limit and skip neccesary documents
 - [ ] Update Documentation
 - [ ] Create Index
+- [ ] Place an index.js file that exposes the module's internals so every consumer will pass through it.
 
 
 
 #### Note
 - In a real application trucks will be known so API will have to set trucks from a predifined list. A truck might be available or engaged and API must select only from available trucks. 
 - **Paginate** request from Order History. accept pageSize and current page into DAL to limit and skip neccesary documents might use mongoose paginate
+- Place an index.js file that exposes the module's internals so every consumer will pass through it.
 - A real application query might be done on truckIds, price, order Ids, neccesary **indexes** will have to  be created for all these usecase but since the main usecase of this application is to create orders, no index was created to make **insert fast** 
