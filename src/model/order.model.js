@@ -6,7 +6,7 @@ const loadSchema = new mongoose.Schema({
 }, { _id: false })
 
 const truckSchema = new mongoose.Schema({
-    truckId: { type: String, required: true },
+    truckID: { type: String, required: true },
     load: { type: [loadSchema], required: true }
 }, { _id: false })
 const orderSchema = new mongoose.Schema({

@@ -106,7 +106,7 @@ class OrderUsecase {
         while (_packages.length) {
             const load = this.getMaximumFitForTruck(_packages, 1000);
             if (load) {
-                trucks.push({ truckId: this.randomId(), load: load })
+                trucks.push({ truckID: this.randomId(), load: load })
             }
             _packages = this.remainingPackages(_packages, load)
         }
