@@ -59,7 +59,7 @@ current version v1.
 
 ### Create Order
 * url : /v1/orders
-* method: Post
+* method: POST
 * body: 
 ```javascript
 [
@@ -89,6 +89,12 @@ current version v1.
   ]
 }
 ```
+
+### Get Price list
+* url : /v1/static/price-list.pdf
+* method: GET
+* Returns PDF of price list
+
 ### Developement
 
 #### Setup
